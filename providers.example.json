@@ -1,0 +1,18 @@
+{
+  "compatible": {
+    "base_url": "https://api.example.com/v1",
+    "endpoint": "/chat/completions",
+    "key_env": "API_BATCH_KEY",
+    "model": "model-id",
+    "max_tokens_field": "max_tokens",
+    "send_temperature": true,
+    "extra_body": {},
+    "batch": {
+      "endpoint": "/v1/chat/completions",
+      "max_requests": 50000,
+      "max_bytes": 200000000,
+      "completion_window": "24h",
+      "pricing_multiplier": 1.0
+    }
+  }
+}
